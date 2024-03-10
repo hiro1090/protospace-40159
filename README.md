@@ -1,7 +1,15 @@
-##
+## ProtoSpaceのER図
 
-
-
+|                                        |
+|usersテーブル                           |
+|                                        |
+|email(string型, NOT NULL,ユニーク制約)  |
+|encrypted_password (string型, NOT NULL) |
+|name(string型, NOT NULL)                |
+|profile(text型, NOT NULL)               |
+|occupation( text型, NOT NULL)           |
+|position(text型, NOT NULL)              |
+|                                        |
 
 ## groups_usersテーブル
 
