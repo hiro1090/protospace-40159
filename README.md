@@ -1,16 +1,14 @@
 ## ProtoSpaceのER図
 
-|                                        |
-|usersテーブル                           |
-|                                        |
-|email(string型, NOT NULL,ユニーク制約)  |
-|encrypted_password (string型, NOT NULL) |
-|name(string型, NOT NULL)                |
-|profile(text型, NOT NULL)               |
-|occupation( text型, NOT NULL)           |
-|position(text型, NOT NULL)              |
-|                                        |
-
+## usersテーブル
+| Column              | Type       | Options                          |
+| ------------------- | ---------- | -------------------------------- |
+| email               | string     | null: false, foreign_key: unique |
+| encrypted_password  | string     | null: false, foreign_key: true   |
+| name                | string     | null: false                      |
+| profile             | text       | null: false                      |
+| occupation          | text       | null: false                      |
+| position            | text       | null: false                      |
 ## groups_usersテーブル
 
 | Column | Type       | Options                        |
