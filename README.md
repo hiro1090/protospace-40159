@@ -1,5 +1,5 @@
 ---
-title: ProtoSpaceのER図
+ ProtoSpaceのER図
 ---
 
 erDiagram
