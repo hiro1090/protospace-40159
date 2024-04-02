@@ -1,5 +1,7 @@
 class PrototypesController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
+  before_action :ensure_correct_user, only: [:edit, :update] # 追加
+
   def index
     @prototypes = Prototype.all
   end
