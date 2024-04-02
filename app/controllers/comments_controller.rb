@@ -5,6 +5,7 @@ class CommentsController < ApplicationController
       redirect_to prototype_path(@comment.prototype) # ここで詳細ページへリダイレクトしている
     else
       @prototype = @comment.prototype
+      @comments = @prototype.comments
       render "prototypes/show" 
     end
 
